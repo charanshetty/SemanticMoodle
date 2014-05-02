@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.devMode" value="true" />
+   <package name="helloworld" extends="struts-default">
+     
+    <action name="get_course" 
+            class="controller.ActionClass" 
+            method="courseData">
+            <result name="success">/semantic.jsp</result>
+      </action>
+    <action name="get_role" 
+            class="controller.ActionClass" 
+            method="roleData">
+            <result name="success">/semantic.jsp</result>
+      </action>
+    <action name="get_user" 
+            class="controller.ActionClass" 
+            method="userData">
+            <result name="success">/semantic.jsp</result>
+      </action>
+    <action name="get_category" 
+            class="controller.ActionClass" 
+            method="categoryData">
+            <result name="success">/semantic.jsp</result>
+      </action>
+    <action name="list_properties" 
+            class="controller.ActionClass" 
+            method="listpropertiesData">
+            <result name="success">/semantic.jsp</result>
+      </action>
+     
+     
+     
+     
+     
+     
+     
+     
+      <action name="showHomePage" 
+            class="controller.ActionClass" 
+            method="fetchData">
+            <result name="success">/semantic.jsp</result>
+      </action>
+   
+    <action name="user_action" 
+            class="controller.ActionClass" 
+            method="userAction">
+            <result name="success">/semantic.jsp</result>
+      </action>
+   
+   
+   <action name="role_action" 
+            class="controller.ActionClass" 
+            method="roleAction">
+            <result name="success">/semantic.jsp</result>
+      </action>
+   
+   
+   <action name="category_action" 
+            class="controller.ActionClass" 
+            method="categoryAction">
+            <result name="success">/semantic.jsp</result>
+      </action>
+   
+   <action name="course_action" 
+            class="controller.ActionClass" 
+            method="courseAction">
+            <result name="success">/semantic.jsp</result>
+      </action>
+   
+   
+   
+   
+   
+   
+   </package>
+</struts>
